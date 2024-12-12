@@ -2,6 +2,7 @@
 <table class="table">
     <thead class="thead-dark">
     <tr>
+        <th>ID</th>
         <th>Họ tên</th>
         <th>Ngày sinh</th>
         <th>Giới tính</th>
@@ -37,6 +38,7 @@
         ?>
 
     <tr>
+        <td><?php echo $row['id']; ?></td>
         <td><?php echo $row['fullname']; ?></td>
         <td><?php echo $row['dob']; ?></td>
         <td><?php echo $row['gender'] ==1 ? 'Nam' : 'Nữ'; ?></td>

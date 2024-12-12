@@ -2,6 +2,7 @@
 require "connect.php";
 global $conn;
 
+$id = isset($_GET["id"]) ? $_GET["id"] : null;
 $fullname = isset($_POST["fullname"]) ? $_POST["fullname"] : null;
 $dob = isset($_POST["dob"]) ? $_POST["dob"] : null;
 $gender = isset($_POST["gender"]) ? $_POST["gender"] : null;

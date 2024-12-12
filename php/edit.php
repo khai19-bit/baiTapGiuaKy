@@ -35,7 +35,7 @@ $row = mysqli_fetch_array($result);
         <div class="form-group">
             <label>Giới tính:</label>
 
-            <td> Nam:<input name="gender" type="radio" value="1" >   Nữ:<input name="gender" type="radio" value="0" >  </td>
+            <td> Nam:<input name="gender" type="radio" value='1' <?php echo ($row["gender"]==1)? "checked" :"";?> >   Nữ:<input name="gender" type="radio" value='0' <?php echo ($row["gender"]==0)? "checked" :"";?> >  </td>
         </div>
         <div class="form-group">
             <label for="hometown">Quê quán:</label>
